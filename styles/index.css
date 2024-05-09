@@ -20,7 +20,8 @@ h1 {
   color: rgb(82 88 100);
   font-weight: 700;
   font-size: 16.4px;
-  line-height: 1.38;
+  /* line-height: 1.38; */
+  line-height: 1.445;
 }
 
 h2 {
@@ -53,13 +54,15 @@ main {
   max-width: 730px;
   margin: 0 23.5px;
   background: #fff;
-  border-radius: 7px;
+  border-radius: 9px;  
+  box-shadow: 0 7px  30px hsla(212, 23%, 69%, 0.363);
   overflow: hidden;
 }
 
 .card__image {
   width: 100%;
   height: 200px;
+  background: center 30% / cover no-repeat url("../assets/img/drawers.jpg");
 }
 
 .card__content {
@@ -71,7 +74,8 @@ main {
 }
 
 .card__content__text {
-  margin-bottom: 19px;
+  margin-bottom: 29px;
+  padding-right: 13px;
 }
 
 .card__content__user {
@@ -99,4 +103,9 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.card__content__user__info time {
+  font-size: 12px;
+  color: var(--grayish-blue);
 }

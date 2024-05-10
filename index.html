@@ -10,7 +10,7 @@
     />
     <link rel="stylesheet" href="styles/piccalilli.css" />
     <link rel="stylesheet" href="styles/index.css" />
-
+    
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -45,15 +45,51 @@
               <h2>Michelle Appleton</h2>
               <p><time datetime="2020-06-28">28 Jun 2020</time></p>
             </div>
-            <button>
+            <button id="show-share" class="share-button">
               <img
-                width="16"
-                height="14"
+                width="15"
+                height="13"
                 src="assets/img/icon-share.svg"
                 alt="share icon"
               />
             </button>
           </div>
+
+          <section id="share-social-media" class="card__content__share">
+            <p>SHARE</p>
+            <div class="card__content__share__social-media-links">
+              <a href="#">
+                <img
+                  width="20"
+                  height="20"
+                  src="assets/img/icon-facebook.svg"
+                  alt="Facebook icon"
+                />
+              </a>
+              <a href="#">
+                <img
+                  width="20"
+                  height="20"
+                  src="assets/img/icon-twitter.svg"
+                  alt="Twitter icon"
+              /></a>
+              <a href="#">
+                <img
+                  width="20"
+                  height="20"
+                  src="assets/img/icon-pinterest.svg"
+                  alt="Pinterest icon"
+              /></a>
+            </div>
+            <button id="hide-share" title="Don't share" class="share-button card__content__share__button">
+              <svg xmlns="http://www.w3.org/2000/svg" width="15" height="13">
+                <path
+                  fill="#6E8098"
+                  d="M15 6.495L8.766.014V3.88H7.441C3.33 3.88 0 7.039 0 10.936v2.049l.589-.612C2.59 10.294 5.422 9.11 8.39 9.11h.375v3.867L15 6.495z"
+                />
+              </svg>
+            </button>
+          </section>
         </div>
       </article>
     </main>

@@ -126,11 +126,11 @@ main {
   align-items: center;
   justify-content: center;
   gap: 18px;
-  opacity: 0;
+  z-index: -10;
 }
 
-.share{
-    opacity: 1;
+.share {
+  z-index: 10;
 }
 
 .card__content__share__social-media-links {
@@ -156,12 +156,15 @@ main {
 @media screen and (min-width: 768px) {
   .card {
     display: flex;
+    overflow: initial;
   }
 
   .card__image {
     height: 280px;
     background-position: left top;
     flex-basis: 287px;
+    border-top-left-radius: 9px;
+    border-bottom-left-radius: 9px;
   }
 
   .card__content {
@@ -173,5 +176,24 @@ main {
 
   .card__content__text {
     margin-bottom: auto;
+  }
+
+  .card__content__share {
+    top: 7.9rem;
+    left: 16rem;
+    height: 54px;
+    width: 247px;
+    padding: 16px 36px;
+    border-radius: 7px;
+    gap: 15px;
+    opacity: 0;
+  }
+
+  .card__content__share__button {
+    display: none;
+  }
+
+  .share {
+    opacity: 1;
   }
 }

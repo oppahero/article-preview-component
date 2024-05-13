@@ -194,7 +194,7 @@ main {
     width: 247px;
     padding: 16px 36px;
     border-radius: 7px;
-    gap: 15px;
+    gap: 17px;
     opacity: 0;
     box-shadow: 0 0 10px var(--grayish-blue);
   }

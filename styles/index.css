@@ -129,6 +129,10 @@ main {
   z-index: -10;
 }
 
+.card__content__share span {
+  display: none;
+}
+
 .share {
   z-index: 10;
 }
@@ -154,6 +158,11 @@ main {
 }
 
 @media screen and (min-width: 768px) {
+  .card__content__title {
+    font-size: 19.6px;
+    margin-bottom: 12px;
+  }
+
   .card {
     display: flex;
     overflow: initial;
@@ -179,21 +188,37 @@ main {
   }
 
   .card__content__share {
-    top: 7.9rem;
-    left: 16rem;
+    top: 8.2rem;
+    left: 16.6rem;
     height: 54px;
     width: 247px;
     padding: 16px 36px;
     border-radius: 7px;
     gap: 15px;
     opacity: 0;
+    box-shadow: 0 0 10px var(--grayish-blue);
+  }
+
+  .share {
+    opacity: 1;
   }
 
   .card__content__share__button {
     display: none;
   }
 
-  .share {
-    opacity: 1;
+  .card__content__share__social-media-links {
+    margin-right: 0;
+  }
+
+  .card__content__share span {
+    display: block;
+    position: absolute;
+    top: 50px;
+    width: 0;
+    height: 0;
+    border-right: 17px solid transparent;
+    border-top: 18px solid var(--very-dark-grayish-blue);
+    border-left: 17px solid transparent;
   }
 }
